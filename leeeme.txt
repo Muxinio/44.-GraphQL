@@ -1,0 +1,43 @@
+Iniciar el app.js con "nodemon app.js"
+
+Usando postman o thunder client 
+
+
+127.0.0.1:3000/graphql "se guarda en la cache solamente cada archivo que agregamos y buscamos"
+o
+127.0.0.1:3000/api/producto "solo por si queres usar el apirest que viene incorporado tambien esta conectado a la db de mongo"
+
+Para solicitar los objetos ya cargados y lo que se cargaron
+
+{
+  products {
+    id
+    name
+    price
+    category
+  }
+}
+
+Para agregar un Producto 
+
+mutation {
+  addProduct(name: "Papipas", price: 15.0, category: "Consumible") {
+    id
+    name
+    price
+    category
+  }
+}
+
+
+para eliminar un producto 
+mutation {
+  deleteProduct(id: "1") {
+    id
+    name
+    price
+    category
+  }
+}
+
+aviso el programa ya agrega un id.
