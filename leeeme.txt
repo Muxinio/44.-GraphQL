@@ -1,9 +1,9 @@
-Iniciar el app.js con "nodemon app.js"
+Iniciar el servidor con "nodemon app.js"
 
 Usando postman o thunder client 
 
 
-127.0.0.1:3000/graphql "se guarda en la cache solamente cada archivo que agregamos y buscamos"
+127.0.0.1:3000/graphql "se guarda en la cache solamente cada archivo que agregamos,eliminamos y solicitamos"
 o
 127.0.0.1:3000/api/producto "solo por si queres usar el apirest que viene incorporado tambien esta conectado a la db de mongo"
 
